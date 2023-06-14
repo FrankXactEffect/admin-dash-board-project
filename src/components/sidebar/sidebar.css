@@ -1,0 +1,165 @@
+.home-side-bar {
+    background-color: rgb(241, 243, 243);
+    width: 20%;
+    height: 120vh;
+    margin-right: 2rem;
+    border-radius: 0.8rem;
+    position: relative;
+}
+
+.top{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(4, 4, 42);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+hr{
+    height: 0;
+    border: 1px soild rgb(174, 172, 172);
+    width: 12rem;
+    margin-left: 2rem;
+}
+
+.center{
+display:flex;
+flex-direction: column;
+ width:80%;
+ margin-left: 1.5rem;
+ margin-top: 1.5rem;
+}
+
+#one,#two,#three,#four,#five,#six{
+    display: flex;
+}
+.icon-one{
+    margin-top: 4px;
+    margin-right: 10px;
+    
+}
+
+
+
+
+/* 
+ul li{
+    display:flex;
+    /* padding-top: 2rem; 
+    padding-left: 1.5rem; */
+
+#one,#two,#three,#four,#five,#six{
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    height:2.5rem;
+    color: rgb(3, 3, 42);
+
+} 
+#two,#three,#four,#five,#six{
+    margin-top: 1.5rem;
+}
+#two:hover,#three:hover,#four:hover,#five:hover,#six:hover{
+    background-color: rgb(3, 3, 42);
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+#one{
+    background-color: rgb(3, 3, 42);
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+}
+/*
+ul span{
+    padding-left: 1rem;
+}*/
+
+.profile-content{
+    position:absolute;
+    left:4.8rem;
+    bottom:5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.profile-content h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+.profile-content p{
+    font-size: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(149, 147, 147);
+   
+}
+.capa{
+    font-size: 3rem;
+    color:rgb(3, 3, 42);
+    margin-right: 0.4rem;
+}
+
+.top span{
+    margin-top: 1rem;
+
+}
+.circle-bg{
+    display: flex;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    width: 5.4rem;
+    height: 5.4rem;
+    border-radius: 50%;
+    border: 2px solid rgb(123, 121, 121);
+}
+.img-circle{
+    width:5rem;
+    height:5rem;
+    border-radius: 50%;
+}
+
+.indicator{
+    width:0.9rem;
+    height:0.9rem;
+    border-radius:50%;
+    background-color:red;
+    position :absolute;
+    left:4.6rem;
+    bottom: 3.2rem;
+    border: 2px solid white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

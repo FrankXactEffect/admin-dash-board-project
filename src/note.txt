@@ -1,0 +1,94 @@
+  // const rows = [
+  //   {
+  //     Name: "ClientOnboarding-Circle",
+  //     Admin: "Samanta J.",
+  //     img: IMAGES.imgTwo,
+  //     Members: 3,
+  //     Status: "Inprogress",
+  //     Runtime: "6 hours",
+  //     Finishdate: " sixMon"
+  //   },
+  //   {
+  //     Name: "Meeting with Notion",
+  //     Admin: "Bob P.",
+  //     img: IMAGES.imgThree,
+  //     Members: 4,
+  //     Status: "Done",
+  //     Runtime: "2hours",
+  //     Finishdate: "sevenMon"
+  //   },
+  //   {
+  //     Name: "First Handoff with Engineers",
+  //     Admin: "Kate O.",
+  //     img: IMAGES.imgFour,
+  //     Members: 10,
+  //     Status: "Inprogress",
+  //     Runtime: "3 days",
+  //     Finishdate: "tenFri"
+  //   },
+  //   {
+  //     Name: "Client Drafting (2) with Lawrence",
+  //     Admin: "Jack F.",
+  //     img: IMAGES.imgFive,
+  //     Members: 7,
+  //     Status: "Inprogress",
+  //     Runtime: "1 week",
+  //     Finishdate: "nineteenSun"
+  //   }
+  // ];
+
+
+
+  -------------------------
+      // <TableContainer component={Paper} className="table">
+    //         <div className='Table-heading-content'>
+    //             <div className='right-caption'>
+    //               <h1>Last tasks</h1>
+    //               <p><span>117 total,</span>proceed to resolve them</p>
+    //             </div>
+    //             <div className='mid-left-container'>
+    //               <div className='middle-caption'>
+    //                 <h1>94</h1>
+    //                 <p>Done</p>
+    //               </div>
+    //               <div className='left-caption'>
+    //                 <h1>23</h1>
+    //                 <p>in progress</p>
+    //               </div>
+    //             </div>
+    //         </div>
+    //   <Table sx={{ minWidth: 650 }} aria-label="simple table">
+    //     <TableHead>
+    //       <TableRow>
+    //         {/* <TableCell></TableCell> */}
+    //         <TableCell className="tableCell">Name</TableCell>
+    //         <TableCell className="tableCell">Admin</TableCell>
+    //         <TableCell className="tableCell">Members</TableCell>
+    //         <TableCell className="tableCell">Status</TableCell>
+    //         <TableCell className="tableCell">Run time</TableCell>
+    //         <TableCell className="tableCell">Finish date</TableCell>
+    //       </TableRow>
+    //     </TableHead>
+    //     <TableBody>
+    //       {rows.map((row) => (
+    //         <TableRow key={row.Members}>
+    //           <TableCell className="tableCell">{row.Name}</TableCell>
+    //           <TableCell className="tableCell">
+    //             <div className='cellWrapper'>
+    //               <img src={row.img} alt="" className='image' />
+    //               {row.Admin}
+    //             </div>
+    //           </TableCell>
+    //           <TableCell className="tableCell">{row.Members}</TableCell>
+    //           <TableCell className="tableCell">
+    //             <span className={`status ${row.Status}`}>{row.Status}</span>
+    //           </TableCell>
+    //           <TableCell className="tableCell">{row.Runtime}</TableCell>
+    //           <TableCell className="tableCell">
+    //             <span className={`finishdate ${row.Finishdate}`}>{row.Finishdate}</span>
+    //           </TableCell>
+    //         </TableRow>
+    //       ))}
+    //     </TableBody>
+    //   </Table>
+    // </TableContainer>
