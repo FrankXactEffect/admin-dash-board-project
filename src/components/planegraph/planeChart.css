@@ -1,0 +1,95 @@
+.PlaneGraph-container {
+
+    /* justify-content: center;
+    align-items: center; */
+    width: 36vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    box-shadow: 0px 2px 4px 2px rgb(180, 179, 179);
+
+}
+
+
+
+
+.ChartsContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.SubChartContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.SubChartContainer h2 {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.innerChartComponents {
+    display: flex;
+    position: relative;
+}
+
+.reasearch-con p {
+    display: flex;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reasearch-con .aqua-circle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(3, 183, 183);
+    border-radius: 50%;
+    position: absolute;
+    top: 0.3rem;
+    left: 0;
+
+}
+
+.design-con {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.design-con p {
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+.design-con .purple-circle {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(52, 3, 52);
+    border-radius: 50%;
+    position: absolute;
+
+    right: 2.7rem;
+    bottom: 0.3rem;
+}
+
+.rightContainer-Chart {
+    display: flex;
+}
+
+.rightContainer-Chart {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+
+select option {
+    font-size: 0.5rem;
+}

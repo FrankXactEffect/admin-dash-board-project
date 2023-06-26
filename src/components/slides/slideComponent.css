@@ -1,0 +1,178 @@
+.dark-blue-slide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 36vw;
+    height: 50vh;
+    background-color: rgb(4, 4, 41);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    box-shadow: 0px 2px 4px 2px rgb(87, 87, 87);
+}
+
+.dark-blue-slide-container h1 {
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.white-card-container {
+    width: 75%;
+    height: 30vh;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px 2px black;
+    position: relative;
+    z-index: 10;
+    margin-left: 3.8rem;
+    margin-top: 2rem;
+}
+
+.top-options {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.white-card-container .card-text-number {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 100px;
+
+}
+
+
+.card-icons {
+    display: flex;
+    margin-top: 1rem;
+    color: rgb(128, 126, 126);
+
+}
+
+.tweleve-comments {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.zerofiles {
+    display: flex;
+}
+
+.first-image,
+.second-image,
+.third-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px 1px rgb(42, 42, 42);
+
+}
+
+.first-image {
+    z-index: 15;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.second-image {
+    z-index: 6;
+    position: relative;
+    right: 12px;
+    top: 0;
+}
+
+.third-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(4, 4, 41);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+    z-index: 3;
+    position: relative;
+    right: 22px;
+    top: 0;
+}
+
+.image {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.hold-images {
+    display: flex;
+    position: relative;
+}
+
+.zedindex-images-icons-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2.5rem;
+}
+
+.card-icons span {
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.tf-icon,
+.bs-icon {
+    margin-right: 0.5rem;
+}
+
+.txt-one {
+    padding: 0.2rem;
+    background-color: rgba(43, 168, 226, 0.279);
+    color: rgba(7, 44, 62, 0.998);
+    font-size: 0.7rem;
+}
+
+.txt-one,
+.txt-two,
+.txt-three {
+    margin-top: 1rem;
+}
+
+.txt-two {
+    padding: 0.2rem;
+    background-color: rgba(98, 226, 43, 0.279);
+    color: rgba(63, 79, 87, 0.998);
+    font-size: 0.7rem;
+}
+
+.txt-three {
+    padding: 0.2rem;
+    background-color: rgba(214, 43, 226, 0.279);
+    color: rgba(35, 9, 41, 0.824);
+    font-size: 0.7rem;
+}
+
+.card-text-number p {
+    color: rgba(8, 8, 8, 0.66);
+}
+
+
+.carousel {
+    width: 100%;
+
+}

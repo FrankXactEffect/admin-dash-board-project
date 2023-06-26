@@ -1,53 +1,88 @@
-.TableList{
+.TableList {
     background-color: white;
-    margin-top: 2rem;
+    margin-top: 35px;
     border-radius: 1rem;
+    box-shadow: 0px 2px 4px 2px #a4a4a4e8;
 }
+
+.data-layout {
+    width: 100%;
+
+}
+
+.cellWithimg {
+    display: flex;
+    align-items: center;
+}
+
+.cellImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
 .Table-heading-content {
     display: flex;
     justify-content: space-between;
 }
 
-.right-caption{
-    margin: 2rem;
-}
-.right-caption h1{
-    font-size: 1.8rem;
-    font-weight:bold;
-    font-family: Arial, Helvetica, sans-serif;
+.right-caption {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
 }
 
-.right-caption p{
-    font-size: 0.8rem;
-}
-.right-caption span{
+.right-caption h1 {
+    font-size: 1.8rem;
     font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 4, 37);
 }
-.mid-left-container{
+
+.right-caption h6 {
+    font-size: 0.8rem;
+    /* margin-right: 100px; */
+
+}
+
+
+.right-caption span {
+    font-weight: bolder;
+}
+
+.mid-left-container {
     display: flex;
 
 }
-.middle-caption{
+
+.middle-caption {
     margin: 2rem;
-    
+
 }
-.middle-caption h1{
+
+.middle-caption h1 {
     font-size: 1.8rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 4, 37);
 }
-.middle-caption p{
+
+.middle-caption p {
     font-size: 0.8rem;
 }
-.left-caption{
+
+.left-caption {
     margin: 2rem;
-    
+
 }
+
 .left-caption h1 {
     font-size: 1.8rem;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    
+    color: rgb(4, 4, 37);
 }
 
 .left-caption p {
@@ -55,7 +90,22 @@
 }
 
 
+/* h3 {
+    padding: 5px;
+    border-radius: 5px;
 
+    &.Done {
+        color: green;
+        background-color: rgba(10, 93, 10, 0.151);
+        font-size: 0.8rem;
+    }
+
+    &.inprogress {
+        color: blue;
+        background-color: rgba(0, 128, 0, 0.151);
+        font-size: 0.8rem;
+    }
+} */
 
 
 
@@ -90,21 +140,7 @@
     object-fit: cover;
 }
 
-.status{
-    padding: 5px;
-    border-radius: 5px;
-    
-    &.Done{
-        color: green;
-        background-color: rgba(10, 93, 10, 0.151);
-        font-size: 0.8rem;
-    }
-    &.Inprogress {
-            color: blue;
-            background-color: rgba(0, 128, 0, 0.151);
-            font-size: 0.8rem;
-        }
-}
+
 
 .finishdate{
     padding: 5px;
@@ -128,16 +164,3 @@
                                                                                         }
 }
  */
-
-
-
-
-
-
-
-
-
-
-
-
-

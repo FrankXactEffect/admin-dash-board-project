@@ -1,23 +1,18 @@
 .home-right-components {
-    /* background-color: yellow; */
-    /* width: 20%;
-    height: 30vh; */
-    flex: 6
-}
-
-.listContainer{
+    flex: 6;
+    /* width: 100%;*/
+    height: 160vh;
     /* background-color: aqua; */
-    height:70vh;
+
 }
 
+.listContainer {
 
+    height: 70vh;
+}
 
+.container-chart-slide {
+    width: 100%;
 
-
-
-
-
-
-
-
-
+    display: flex;
+}

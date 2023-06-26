@@ -1,94 +1,188 @@
-  // const rows = [
-  //   {
-  //     Name: "ClientOnboarding-Circle",
-  //     Admin: "Samanta J.",
-  //     img: IMAGES.imgTwo,
-  //     Members: 3,
-  //     Status: "Inprogress",
-  //     Runtime: "6 hours",
-  //     Finishdate: " sixMon"
-  //   },
-  //   {
-  //     Name: "Meeting with Notion",
-  //     Admin: "Bob P.",
-  //     img: IMAGES.imgThree,
-  //     Members: 4,
-  //     Status: "Done",
-  //     Runtime: "2hours",
-  //     Finishdate: "sevenMon"
-  //   },
-  //   {
-  //     Name: "First Handoff with Engineers",
-  //     Admin: "Kate O.",
-  //     img: IMAGES.imgFour,
-  //     Members: 10,
-  //     Status: "Inprogress",
-  //     Runtime: "3 days",
-  //     Finishdate: "tenFri"
-  //   },
-  //   {
-  //     Name: "Client Drafting (2) with Lawrence",
-  //     Admin: "Jack F.",
-  //     img: IMAGES.imgFive,
-  //     Members: 7,
-  //     Status: "Inprogress",
-  //     Runtime: "1 week",
-  //     Finishdate: "nineteenSun"
-  //   }
-  // ];
+==================tableContent===============
+import React from 'react'
+import './tables.css'
+import IMAGES from '../../assets/index'
+import { DataGrid } from '@mui/x-data-grid';
+
+const adminRows = [
+  {
+    id: 1,
+    Name: "ClientBoard",
+    img: IMAGES.imgFive,
+    admin: 'Samanta',
+    members: 3,
+    status: 'inprogress',
+    runtime: '6hours',
+    finishdate: '6Mon'
+  },
+  {
+    id: 2,
+    Name: 'MeetingNotion',
+    img: IMAGES.imgFour,
+    admin: 'Bob P.',
+    members: 4,
+    status: 'Done',
+    runtime: '2hours',
+    finishdate: '7Tue'
+  },
+  {
+    id: 3,
+    Name: 'FirstHandoff',
+    img: IMAGES.imgThree,
+    admin: 'Kate O.',
+    members: 10,
+    status: 'inProgress',
+    runtime: '3days',
+    finishdate: '10Fri'
+  },
+  {
+    id: 4,
+    Name: 'ClientDraft',
+    img: IMAGES.imgTwo,
+    admin: 'Jack F.',
+    members: 7,
+    status: 'inProgress',
+    runtime: '1week',
+    finishdate: '19Sun'
+  }
+]
+
+const adminColumns = [
+
+  { field: "id", headerName: "ID", width: 70 },
+  { field: "Name", headerName: "Name", width: 160 },
+  {
+    field: "admin", headerName: "Admin", width: 190, renderCell: (params) => {
+      return (
+        <div className='cellWithimg'>
+          <img className='cellImg' src={params.row.img} alt="" />
+          {params.row.admin}
+        </div>
+      )
+    }
+  },
+  { field: 'members', headerName: 'Members', type: 'number', width: 100 },
+  {
+    field: 'status', headerName: 'Status', type: 'number', width: 140
+  },
+  { field: 'runtime', headerName: 'Runtime', type: 'number', width: 140 },
+  { field: 'finishdate', headerName: 'Finishdate', type: 'number', width: 140 }
+
+]
+
+function Tables() {
+
+  return (
+    <div className='TableList'>
+      <div className='Table-heading-content'>
+        <div className='right-caption'>
+          <h1>Last tasks</h1>
+          <h6><span>117 total,</span>proceed to resolve them</h6>
+        </div>
+        <div className='mid-left-container'>
+          <div className='middle-caption'>
+            <h1>94</h1>
+            <h6>Done</h6>
+          </div>
+          <div className='left-caption'>
+            <h1>23</h1>
+            <h6>in progress</h6>
+          </div>
+        </div>
+      </div>
+      <DataGrid className='data-layout'
+        rows={adminRows}
+        columns={adminColumns}
+        checkboxSelection
+      />
+    </div>
+  )
+}
+
+export default Tables
+
+=================tableContent CSS============
+
+.data-layout {
+    width: 100%;
+
+}
+
+.cellWithimg {
+    display: flex;
+    align-items: center;
+}
+
+.cellImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.Table-heading-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-caption {
+    display: flex;
+    flex-direction: column;
+    margin: 35px;
+}
+
+.right-caption h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 4, 37);
+}
+
+.right-caption h6 {
+    font-size: 0.8rem;
+    /* margin-right: 100px; */
+
+}
 
 
+.right-caption span {
+    font-weight: bolder;
+}
 
-  -------------------------
-      // <TableContainer component={Paper} className="table">
-    //         <div className='Table-heading-content'>
-    //             <div className='right-caption'>
-    //               <h1>Last tasks</h1>
-    //               <p><span>117 total,</span>proceed to resolve them</p>
-    //             </div>
-    //             <div className='mid-left-container'>
-    //               <div className='middle-caption'>
-    //                 <h1>94</h1>
-    //                 <p>Done</p>
-    //               </div>
-    //               <div className='left-caption'>
-    //                 <h1>23</h1>
-    //                 <p>in progress</p>
-    //               </div>
-    //             </div>
-    //         </div>
-    //   <Table sx={{ minWidth: 650 }} aria-label="simple table">
-    //     <TableHead>
-    //       <TableRow>
-    //         {/* <TableCell></TableCell> */}
-    //         <TableCell className="tableCell">Name</TableCell>
-    //         <TableCell className="tableCell">Admin</TableCell>
-    //         <TableCell className="tableCell">Members</TableCell>
-    //         <TableCell className="tableCell">Status</TableCell>
-    //         <TableCell className="tableCell">Run time</TableCell>
-    //         <TableCell className="tableCell">Finish date</TableCell>
-    //       </TableRow>
-    //     </TableHead>
-    //     <TableBody>
-    //       {rows.map((row) => (
-    //         <TableRow key={row.Members}>
-    //           <TableCell className="tableCell">{row.Name}</TableCell>
-    //           <TableCell className="tableCell">
-    //             <div className='cellWrapper'>
-    //               <img src={row.img} alt="" className='image' />
-    //               {row.Admin}
-    //             </div>
-    //           </TableCell>
-    //           <TableCell className="tableCell">{row.Members}</TableCell>
-    //           <TableCell className="tableCell">
-    //             <span className={`status ${row.Status}`}>{row.Status}</span>
-    //           </TableCell>
-    //           <TableCell className="tableCell">{row.Runtime}</TableCell>
-    //           <TableCell className="tableCell">
-    //             <span className={`finishdate ${row.Finishdate}`}>{row.Finishdate}</span>
-    //           </TableCell>
-    //         </TableRow>
-    //       ))}
-    //     </TableBody>
-    //   </Table>
-    // </TableContainer>
+.mid-left-container {
+    display: flex;
+
+}
+
+.middle-caption {
+    margin: 2rem;
+
+}
+
+.middle-caption h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 4, 37);
+}
+
+.middle-caption p {
+    font-size: 0.8rem;
+}
+
+.left-caption {
+    margin: 2rem;
+
+}
+
+.left-caption h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 4, 37);
+}
+
+.left-caption p {
+    font-size: 0.8rem;
+}
